@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>JS Task</title>
+</head>
+<body>
+    <div class="b">
+        <h1>Form Builder</h1>
+        <form action="" method="post">
+            <ul class="container" id="main_form">        
+                <li class="l">
+                    <Label for="name">Element name</Label>
+                    <input type="text" name="name" id="name" required>
+                </li>
+
+                <li class="l">
+                    <Label for="type">Element type</Label>
+                    <select name="type" id="type" required>
+                        <option value="text">Text</option>
+                        <option value="email">Email</option>
+                        <option value="password">Password</option>
+                        <option value="select">Select</option>
+                    </select>
+                </li>
+                
+                <li class="l">
+                    <Label for="req">Required</Label>
+                    <select name="req" id="req" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <button type="button" id="add" onclick="form_action()" class="btn">+</button>
+                </li>
+
+
+                <li class="l">
+                    <label>Options for select</label>
+                </li>
+                <li class="l">
+                    <Label for="o1">Option 1</Label>
+                    <input type="text" name="o1" id="o1">
+                </li>
+                <li class="l">
+                    <Label for="o2">Option 2</Label>
+                    <input type="text" name="o2" id="o2">
+                </li>
+                <li class="l">
+                    <Label for="o3">Option 3</Label>
+                    <input type="text" name="o3" id="o3">
+                </li>
+            </ul>
+        </form>
+        <button type="button" id="generate" onclick="create_form()">Generate Form</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
